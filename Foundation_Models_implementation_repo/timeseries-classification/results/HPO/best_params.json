@@ -1,0 +1,22 @@
+{
+    "timesfm": {
+        "max_epochs": 43,
+        "batch_size": 28,
+        "hidden_dims": [
+            20,
+            10
+        ],
+        "dropout": 0.1758520068110695,
+        "lr": 0.0004316438382793
+    },
+    "MOMENT-1-base": {
+        "max_epochs": 51,
+        "batch_size": 19,
+        "hidden_dims": [
+            20,
+            10
+        ],
+        "dropout": 0.1937746482612693,
+        "lr": 0.0074124750576858
+    }
+}
