@@ -18,12 +18,18 @@ Those datasets MUST be downloaded from ZENODO: https://zenodo.org/records/171524
 - Additionally, preprocessed datasets used in the Jupyter notebooks are saved in `/saved training sets`
 
 ### Model Weights: 
-Multiple saved model weights can be found in `/saved_models`.
+Multiple saved model weights can be found in `/saved_models`. Notably the trained 12-latent space VRAE is saved as `vrae_autoencoder_12.pth`. Most other models were saved using joblib dump.
 
 ### Code Notebooks
-- `/vrae_training.ipynb`: Code for importing the training dataset, training the autoencoder and generating latent space projections of the embedded data. Also imports our trained model weights to generate embeddings.
-- `/antibiotic_control_classification.ipynb`: Code for importing the trained model weights and the antibiotic dataset, encoding the data, and performing binary classification.
-- `/temperature_dataset_analysis.ipynb`: Code for importing the trained model weights and the temperature dataset, showing reconstructions of the time-series, encoding the data and performing projections in the latent space.
+- `vrae_training.ipynb`: Import the growth/antibiotic training dataset, train the VRAE autoencoder, and generate latent space projections. Includes code to load pretrained model weights and create embeddings.
+- `antibiotic_control_classification_vrae.ipynb`: Import the antibiotic dataset, preprocess single-cell tracks, encode sequences with the pretrained VRAE, and evaluate classification performance with explainability diagnostics.
+- `temperature_dataset_analysis.ipynb`: Import the temperature dataset, reconstruct time-series, encode with the pretrained VRAE, and visualize latent projections and reconstructions.
+- `1DCNN.ipynb`: Train a 1D CNN autoencoder on the antibiotic growth data and train MLP classifiers for antibiotic response prediction tasks, with model training and evaluation metrics..
+- `LSTM_classifer.ipynb`: Define and tune LSTM-based classifiers for antibiotic response prediction tasks, with model training and evaluation metrics.
+- `tsfresh+MLP_classifier.ipynb`: Extract tsfresh time-series features and train MLP classifiers for antibiotic response prediction tasks, with model training and evaluation metrics.
+- `time_series_regression.ipynb`: Encode growth trajectories using VRAE latent embeddings and perform regression to predict elongation rate and fluorescence targets with XGBoost.
+- `SOS_and_multivariate_results.ipynb`: Construct multivariate single-cell datasets, encode them with VRAE, and compare results across SOS fluorescence and multivariate feature representations.
 
 ### Usage
+First get the datasets from zenodo and put them in this folder (one csv file and one folder called `temperature_dataset`).
 After installation, you can run the provided notebooks to preprocess data, train models, and visualize results.
