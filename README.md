@@ -2,7 +2,7 @@
 
 ## Description
 
-Code and data for paper "Representation learning of single-cell time-series with deep variational autoencoders" by Fraisse et al, 2025. This repository contains code for training and evaluating machine learning models to learn meaningful representations of time-series from single cell experiments. Files contain the two datasets used in this study (which can also be found in their respective storage) in `/temperature_dataset` and `growth_antibiotic_dataset.csv`. This repository also contains Jupyter notebooks with code for training the models, encoding the data and evaluating the embeddings.
+Code and data for paper "Representation learning of single-cell time-series with deep variational autoencoders" by Fraisse et al, 2025. This repository contains code for training and evaluating machine learning models to learn meaningful representations of time-series from single cell experiments. 
 
 ## Repository Structure
 
