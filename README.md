@@ -15,15 +15,10 @@ Those datasets MUST be downloaded from ZENODO: https://zenodo.org/records/171524
 - `/temperature_dataset`: Dataset from Tanouchi, Y., Pai, A., Park, H. et al. Long-term growth data of Escherichia coli at a single-cell level. Sci Data 4, 170036 (2017). https://doi.org/10.1038/sdata.2017.36.
 - `growth_antibiotic_dataset.csv`: Dataset from James Broughton, Achille Fraisse, Meriem El Karoui. Suppression of bacterial cell death underlies the antagonistic interaction between ciprofloxacin and tetracycline in Escherichia coli. bioRxiv 2024.04.18.590101; https://doi.org/10.1101/2024.04.18.590101
 
-### Model Weights
--`/model_12.pth`: Weights for the variational recurrent autoencoder to be imported by the Jupyter notebooks. Notable parameters:
+- Additionally, preprocessed datasets used in the Jupyter notebooks are saved in `/saved training sets`
 
-    - sequence_length = 72
-    - number_of_features = 1
-    - latent_length = 12
-    - hidden_size = 90
-    - hidden_layer_depth = 2
-    - block = `LSTM`
+### Model Weights: 
+Multiple saved model weights can be found in `/saved_models`.
 
 ### Code Notebooks
 - `/vrae_training.ipynb`: Code for importing the training dataset, training the autoencoder and generating latent space projections of the embedded data. Also imports our trained model weights to generate embeddings.
