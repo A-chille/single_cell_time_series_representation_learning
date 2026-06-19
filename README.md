@@ -11,7 +11,7 @@ Code and data for paper "Representation learning of single-cell time-series with
 - Additionally, you will need the VRAE code from this GitHub repository: https://github.com/tejaslodaya/timeseries-clustering-vae
 
 ### Datasets: 
-Those datasets MUST be downloaded from ZENODO: https://zenodo.org/records/17152452
+Those datasets MUST be downloaded from ZENODO: [https://zenodo.org/records/17152452](https://zenodo.org/records/20747946)
 - `/temperature_dataset`: Dataset from Tanouchi, Y., Pai, A., Park, H. et al. Long-term growth data of Escherichia coli at a single-cell level. Sci Data 4, 170036 (2017). https://doi.org/10.1038/sdata.2017.36.
 - `growth_antibiotic_dataset.csv`: Dataset from James Broughton, Achille Fraisse, Meriem El Karoui. Suppression of bacterial cell death underlies the antagonistic interaction between ciprofloxacin and tetracycline in Escherichia coli. bioRxiv 2024.04.18.590101; https://doi.org/10.1101/2024.04.18.590101
 
