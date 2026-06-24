@@ -1,17 +1,15 @@
-# Code and data for "Representation learning of single-cell time-series with deep variational autoencoders"
+# Code for Fraisse et al, "Representation learning of single-cell time-series with deep variational autoencoders", 2026
 
 ## Description
 
 Code and data for paper "Representation learning of single-cell time-series with deep variational autoencoders" by Fraisse et al, 2025. This repository contains code for training and evaluating machine learning models to learn meaningful representations of time-series from single cell experiments. 
-
-## Repository Structure
 
 ## Environment and Dependencies
 - The `environment.yml` file contains all regular dependencies needed to run the code. It can be installed in a fresh Conda environment using the following command: `conda env create -f environment.yml`.
 - Additionally, you will need the VRAE code from this GitHub repository: https://github.com/tejaslodaya/timeseries-clustering-vae
 
 ### Datasets: 
-Those datasets MUST be downloaded from ZENODO: [https://zenodo.org/records/17152452](https://zenodo.org/records/20747946)
+Those datasets must be downloaded from zenodo: [https://zenodo.org/records/17152452](https://zenodo.org/records/20747946)
 - `/temperature_dataset`: Dataset from Tanouchi, Y., Pai, A., Park, H. et al. Long-term growth data of Escherichia coli at a single-cell level. Sci Data 4, 170036 (2017). https://doi.org/10.1038/sdata.2017.36.
 - `growth_antibiotic_dataset.csv`: Dataset from James Broughton, Achille Fraisse, Meriem El Karoui. Suppression of bacterial cell death underlies the antagonistic interaction between ciprofloxacin and tetracycline in Escherichia coli. bioRxiv 2024.04.18.590101; https://doi.org/10.1101/2024.04.18.590101
 
